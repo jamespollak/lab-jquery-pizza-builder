@@ -26,10 +26,10 @@
           <button class="btn btn-green-peppers active">Green peppers</button>
         </li>
         <li>
-          <button class="btn btn-sauce active">White sauce</button>
+          <button class="btn btn-sauce">White sauce</button>
         </li>
         <li>
-          <button class="btn btn-crust active">Gluten-free crust</button>
+          <button class="btn btn-crust">Gluten-free crust</button>
         </li>
       </ul>
     </div>
@@ -39,20 +39,21 @@
     <aside class="panel price">
       <h2>Your pizza's price</h2>
 
-      <b>$10 cheese pizza</b>
+      <b>$<span class="base">10</span> cheese pizza</b>
       <ul>
-        <li>$1 pepperonni</li>
-        <li>$1 mushrooms</li>
-        <li>$1 green peppers</li>
-        <li>$3 white sauce</li>
-        <li>$5 gluten-free crust</li>
+        <li class = "pepperonni">$<span class="sum" id="option-1">1</span> pepperonni</li>
+        <li class = "mushrooms">$<span class="sum" id="option-2">1</span> mushrooms</li>
+        <li class = "greenpeppers">$<span class="sum" id="option-3">1</span> green peppers</li>
+        <li class = "whitesauce">$<span class="sum" id="option-4">3</span> white sauce</li>
+        <li class = "glutenfreecrust">$<span class="sum" id="option-5">5</span> gluten-free crust</li>
       </ul>
-      <strong>$21</strong>
+      <strong>$<span id="prices">13</span></strong>
     </aside>
     <!-- End Price -->
 
     <!-- Begin Pizza -->
     <div id="pizza">
+      <section class = "green-peppers">
       <section class="green-pepper one"></section>
       <section class="green-pepper two"></section>
       <section class="green-pepper three"></section>
@@ -74,7 +75,8 @@
       <section class="green-pepper nineteen"></section>
       <section class="green-pepper twenty"></section>
       <section class="green-pepper twenty-one"></section>
-
+    </section>
+      <section class = "mushrooms">
       <section class="mushroom one">
         <div class="cap">1</div>
         <div class="stem"></div>
@@ -234,7 +236,9 @@
         <div class="cap">31</div>
         <div class="stem"></div>
       </section>
+    </section>
 
+      <section class = "pepperonni" >
       <section class="pep one">1</section>
       <section class="pep two">2</section>
       <section class="pep three">3</section>
@@ -267,10 +271,11 @@
       <section class="pep thirty">30</section>
       <section class="pep thirty-one">31</section>
       <section class="pep thirty-three">33</section>
+      </section>
 
-      <section class="crust crust-gluten-free">
+      <section class="crust">
         <section class="cheese"></section>
-        <section class="sauce sauce-white"></section>
+        <section class="sauce"></section>
       </section>
     </div>
     <!-- End Pizza -->
@@ -289,7 +294,7 @@
     </footer>
     <!-- Footer -->
 
-    <script src="jquery-2.1.4.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="pizza.js"></script>
   </body>
 </html>
